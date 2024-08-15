@@ -22,4 +22,4 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
       - name: npm install dependency
-        run: sudo apt install npm
+        run: sudo apt install npm -y
