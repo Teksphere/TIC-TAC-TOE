@@ -37,4 +37,8 @@ jobs:
           docker push teksphere/tic-tac-toe:latest
         env:
           DOCKER_CLI_ACI: 1
+          
+      - name: Trivy image scan
+        run: trivy image teksphere/tic-tac-toe:latest > trivyimage.txt
+
 
